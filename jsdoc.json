@@ -1,0 +1,33 @@
+{
+  "source": {
+    "include": ["api", "lib"]
+  },
+  "sourceType": "module",
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "destination": "site",
+    "readme": "README.md",
+    "template": "node_modules/docdash",
+    "encoding": "utf8"
+  },
+  "templates": {
+    "default": { "includeDate": false }
+  },
+  "docdash": {
+    "static": false,
+    "sort": true,
+    "search": true,
+    "collapse": false,
+    "typedefs": true,
+    "private": false,
+    "meta": {
+      "title": "astiko-ktel-live",
+      "description": "Where the Kastoria city buses are: the server between the drivers' phones and the passenger app"
+    },
+    "menu": {
+      "GitHub": { "href": "https://github.com/Kastoria-Dev-Core/astiko-ktel-live", "target": "_blank" },
+      "Passenger app docs": { "href": "https://kastoria-dev-core.github.io/astiko-ktel-kastorias-app/", "target": "_blank" },
+      "Drivers' app docs": { "href": "https://kastoria-dev-core.github.io/astiko-ktel-odigoi/", "target": "_blank" }
+    }
+  }
+}
