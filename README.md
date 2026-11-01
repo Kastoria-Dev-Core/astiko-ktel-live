@@ -72,6 +72,18 @@ npm test
 
 `.github/workflows/test.yml` runs the tests on every pull request and push to `main`; Vercel deploys `main`.
 
+## Code documentation
+
+Every function, constant and data shape has JSDoc, and the docs are a site like the two apps':
+
+https://kastoria-dev-core.github.io/astiko-ktel-live/
+
+`.github/workflows/docs.yml` makes it with [JSDoc](https://jsdoc.app/) and publishes it on every push to `main`. To make it locally, into `site/`:
+
+```bash
+npm run docs
+```
+
 ## License
 
 [GNU General Public License v3.0](LICENSE) or later, like the two apps. See [NOTICE](NOTICE).
